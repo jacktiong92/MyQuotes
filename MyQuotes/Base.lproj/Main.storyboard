@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyQuotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNs-ob-Cjx">
+                                <rect key="frame" x="26" y="586" width="323" height="55"/>
+                                <color key="backgroundColor" red="0.25882352939999997" green="0.7843137255" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="gV6-80-ruu"/>
+                                </constraints>
+                                <state key="normal" title="Next Quote">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextQuoteTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HWN-SJ-ugS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It does not matter how slowly you go as long as you do not stop." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMU-nz-pmD">
+                                <rect key="frame" x="26" y="313" width="323" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.54901960780000003" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="JNs-ob-Cjx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="Lgd-v8-1i8"/>
+                            <constraint firstItem="IMU-nz-pmD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OqQ-fG-uhv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JNs-ob-Cjx" secondAttribute="trailing" constant="26" id="XaE-cH-9fT"/>
+                            <constraint firstItem="IMU-nz-pmD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="26" id="cd4-Mk-xZ2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JNs-ob-Cjx" secondAttribute="bottom" constant="26" id="fXP-5Z-ARa"/>
+                            <constraint firstItem="JNs-ob-Cjx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uAX-OE-BZ5"/>
+                            <constraint firstItem="IMU-nz-pmD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wB2-0L-woA"/>
+                            <constraint firstAttribute="trailing" secondItem="IMU-nz-pmD" secondAttribute="trailing" constant="26" id="yZK-gf-w9K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="nextQuoteButton" destination="JNs-ob-Cjx" id="fvl-ei-2Dc"/>
+                        <outlet property="quoteLabel" destination="IMU-nz-pmD" id="tn5-cs-hTV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
